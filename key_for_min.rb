@@ -3,9 +3,9 @@ require 'pry'
 # Given a hash with numeric values, return the key for the smallest value
 def key_for_min_value(name_hash)
   name_key = nil
-  value = 0
+  value = 9999
   name_hash.each do |name, result|
-    if value < result
+    if value > result
       value = result
       name_key = name 
     end 
